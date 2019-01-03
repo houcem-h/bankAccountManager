@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Services in {{ app_name }}!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>{{ app_name }}'s services list</h1>
+    <div class="col-lg-4">
+            <div class="bs-component">
+                <ul class="list-group">
+                {% for service in servivesList %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        {{ service }}
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+          </div>
+</div>
+{% endblock %}

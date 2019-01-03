@@ -1,0 +1,11 @@
+index:
+  path: /
+  controller: App\Controller\PagesController::index
+
+about:
+  path: /about
+  controller: App\Controller\PagesController::about
+
+services:
+  path: /services
+  controller: App\Controller\PagesController::services
